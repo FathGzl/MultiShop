@@ -20,7 +20,8 @@ builder.Services.AddScoped<IProductImageService, ProductImageService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
-builder.Services.AddScoped<IDatabaseSettings>(sp => { 
+builder.Services.AddScoped<IDatabaseSettings>(sp =>
+{
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
 
@@ -29,15 +30,31 @@ builder.Services.AddScoped<IDatabaseSettings>(sp => {
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "MultiShop.Catalog",
+        Version = "v1"
+    });
+
+
+    c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First()); //This line
+
+
+});
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sourcing API V1");
+    });
 }
 
 app.UseHttpsRedirection();
