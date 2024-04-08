@@ -20,6 +20,6 @@ namespace MultiShop.Discount.Context
             optionsBuilder.UseSqlServer("Server=DESKTOP-6IU1HSS;initial Catalog=MultiShopDiscountDb;integrated Security=true;");
         }
         public DbSet<Coupon> Coupons { get; set; }
-        IDbConnection CreateConnection() => new SqlConnection(_connectionString);
+        public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
     }
 }
