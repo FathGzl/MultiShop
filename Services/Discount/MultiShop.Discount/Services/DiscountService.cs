@@ -15,12 +15,12 @@ namespace MultiShop.Discount.Services
 
         public async Task CreateDiscountCouponAsync(CreateDiscountCouponDto createDiscountCouponDto)
         {
-            var query = "Insert Into Coupons(Code,Rate,IsActive,ValidDate) Values (@code,@rate,@isActive,@validData)";
+            var query = "Insert Into Coupons(Code,Rate,IsActive,ValidDate) Values (@code,@rate,@isActive,@validDate)";
             var parameters = new DynamicParameters();
             parameters.Add("@code", createDiscountCouponDto.Code);
             parameters.Add("@rate", createDiscountCouponDto.Rate);
             parameters.Add("@isActive", createDiscountCouponDto.IsActive);
-            parameters.Add("@validData", createDiscountCouponDto.ValidDate);
+            parameters.Add("@validDate", createDiscountCouponDto.ValidDate);
             using (var connection = _dapperContext.CreateConnection()) 
             {
                 await connection.ExecuteAsync(query, parameters);
@@ -66,14 +66,16 @@ namespace MultiShop.Discount.Services
                 "Set Code=@code" +
                 ",Rate=@rate" +
                 ",IsActive=@isActive" +
-                ",ValidDate=@validData " +
+                ",ValidDate=@validDate " +
                 "Where CouponId=@couponId";
 
             var parameters = new DynamicParameters();
             parameters.Add("@code", updateDiscountCouponDto.Code);
             parameters.Add("@rate", updateDiscountCouponDto.Rate);
             parameters.Add("@isActive", updateDiscountCouponDto.IsActive);
-            parameters.Add("@validData", updateDiscountCouponDto.ValidDate);
+            parameters.Add("@validDate", updateDiscountCouponDto.ValidDate);
+            parameters.Add("@couponId", updateDiscountCouponDto.CouponId);
+
             using (var connection = _dapperContext.CreateConnection())
             {
                 await connection.ExecuteAsync(query, parameters);
