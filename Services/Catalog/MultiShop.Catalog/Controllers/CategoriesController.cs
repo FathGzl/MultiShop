@@ -43,8 +43,8 @@ namespace MultiShop.Catalog.Controllers
             return Ok("Kategori Başarıyla Silindi");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateCategory(UpdateCategoryDto updateCategoryDto)
+        [HttpPut]
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
             await _categoryService.UpdateCategoryAsync(updateCategoryDto);
             return Ok("Kategori Başarıyla Güncellendi");

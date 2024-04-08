@@ -43,8 +43,8 @@ namespace MultiShop.Catalog.Controllers
             return Ok("Ürün Detayı Başarıyla Silindi");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateProductDetail(UpdateProductDetailDto updateProductDetailDto)
+        [HttpPut]
+        public async Task<IActionResult> UpdateProductDetail(UpdateProductDetailDto updateProductDetailDto)
         {
             await _ProductDetailService.UpdateProductDetailAsync(updateProductDetailDto);
             return Ok("Ürün Detayı Başarıyla Güncellendi");

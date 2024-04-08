@@ -44,8 +44,8 @@ namespace MultiShop.Catalog.Controllers
             return Ok("Ürün Görseleri Başarıyla Silindi");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateProductImage(UpdateProductImageDto updateProductImageDto)
+        [HttpPut]
+        public async Task<IActionResult> UpdateProductImage(UpdateProductImageDto updateProductImageDto)
         {
             await _ProductImageService.UpdateProductImageAsync(updateProductImageDto);
             return Ok("Ürün Görseleri Başarıyla Güncellendi");
