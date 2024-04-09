@@ -1,5 +1,4 @@
 ﻿using MultiShop.Order.Application.Features.CQRS.Queries.AddressQueries;
-using MultiShop.Order.Application.Features.CQRS.Queries.OrderDetailQueries;
 using MultiShop.Order.Application.Features.CQRS.Results.AddressResults;
 using MultiShop.Order.Application.Interfaces;
 using MultiShop.Order.Domain.Entities;
