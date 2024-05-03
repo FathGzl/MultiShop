@@ -4,11 +4,11 @@ using MultShop.Cargo.EntityLayer.Concrete;
 
 namespace MultShop.Cargo.BusinessLayer.Concrete
 {
-    internal class CargoCustumerManager : ICargoCustumerService
+    public class CargoCustomerManager : ICargoCustomerService
     {
         private readonly ICargoCustomerDal _cargoCustomerDal;
 
-        public CargoCustumerManager(ICargoCustomerDal cargoCustomerDal)
+        public CargoCustomerManager(ICargoCustomerDal cargoCustomerDal)
         {
             _cargoCustomerDal = cargoCustomerDal;
         }

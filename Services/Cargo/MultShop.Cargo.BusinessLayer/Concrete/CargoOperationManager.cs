@@ -4,7 +4,7 @@ using MultShop.Cargo.EntityLayer.Concrete;
 
 namespace MultShop.Cargo.BusinessLayer.Concrete
 {
-    internal class CargoOperationManager: ICargoOperationService
+    public class CargoOperationManager: ICargoOperationService
     {
         private readonly ICargoOperationDal _cargoOperationDal;
 

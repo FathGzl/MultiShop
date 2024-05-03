@@ -5,9 +5,9 @@ using MultShop.Cargo.EntityLayer.Concrete;
 
 namespace MultShop.Cargo.DataAccessLayer.EntityFramework
 {
-    public class EfCargoCustumerDal : GenericRepository<CargoCustomer>, ICargoCustomerDal
+    public class EfCargoCustomerDal : GenericRepository<CargoCustomer>, ICargoCustomerDal
     {
-        public EfCargoCustumerDal(CargoContext context) : base(context)
+        public EfCargoCustomerDal(CargoContext context) : base(context)
         {
         }
     }
