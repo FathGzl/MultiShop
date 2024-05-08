@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebUO.ViewComponents.DefaultViewComponents
 {
-    public class _ScriptUILayoutComponentPartial : ViewComponent
+    public class _DefaultCarouselComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

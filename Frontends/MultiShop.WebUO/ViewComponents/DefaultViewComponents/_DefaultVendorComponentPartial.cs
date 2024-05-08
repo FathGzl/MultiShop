@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebUO.ViewComponents.DefaultViewComponents
 {
-    public class _FooterUILayoutComponentPartial : ViewComponent
+    public class _DefaultVendorComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

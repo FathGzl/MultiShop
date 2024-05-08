@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.DefaultViewComponents
+namespace MultiShop.WebUO.ViewComponents.ProductListViewComponents
 {
-    public class _FeatureProductsDefaultComponentPartial : ViewComponent
+    public class _ProductListSizeFilterComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

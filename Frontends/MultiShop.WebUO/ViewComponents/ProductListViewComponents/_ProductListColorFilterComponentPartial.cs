@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebUO.ViewComponents.ProductListViewComponents
 {
-    public class _TopbarUILayoutComponentPartial : ViewComponent
+    public class _ProductListColorFilterComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebUO.ViewComponents.ProductListViewComponents
 {
-    public class _NavbarUILayoutComponentPartial : ViewComponent
+    public class _ProductListComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
