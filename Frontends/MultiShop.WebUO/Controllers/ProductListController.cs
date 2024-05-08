@@ -8,5 +8,10 @@ namespace MultiShop.WebUO.Controllers
         {
             return View();
         }
+
+        public IActionResult ProductDetail()
+        {         
+            return View();
+        }
     }
 }
