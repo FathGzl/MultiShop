@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUI.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebIU.ViewComponents.ShoppingCartViewComponents
 {
-    public class _UILayoutHeadComponentPartial : ViewComponent
+    public class _ShoppingCartProductListComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

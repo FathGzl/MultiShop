@@ -58,7 +58,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Basket", "Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{C9027743-5012-43D4-ACA5-8A3A26B0A42E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.WebIU", "Frontends\MultiShop.WebUO\MultiShop.WebIU.csproj", "{8297069B-D77F-4196-8CB9-45E7A59248C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUO\MultiShop.WebUI.csproj", "{8297069B-D77F-4196-8CB9-45E7A59248C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
