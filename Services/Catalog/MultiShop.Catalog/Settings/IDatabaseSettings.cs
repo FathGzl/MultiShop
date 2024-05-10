@@ -7,6 +7,7 @@
         string ProductDetailCollectionName { get; set; }
         string ProductImageCollectionName { get; set; }
         string FeatureSliderCollectionName { get; set; }
+        string SpecialOfferCollectionName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }      
     }
