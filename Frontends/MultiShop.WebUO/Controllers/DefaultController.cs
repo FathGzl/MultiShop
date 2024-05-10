@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.Controllers
+namespace MultiShop.WebUI.Controllers
 {
     public class DefaultController : Controller
     {

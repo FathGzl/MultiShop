@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.UILayoutViewComponents
+namespace MultiShop.WebUI.ViewComponents.UILayoutViewComponents
 {
     public class _UILayoutFooterComponentPartial : ViewComponent
     {

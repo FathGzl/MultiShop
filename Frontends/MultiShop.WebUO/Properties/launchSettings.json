@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "MultiShop.WebUO": {
+    "MultiShop.WebUI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

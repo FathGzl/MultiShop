@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUO.ViewComponents.ProductDetailViewComponents
+namespace MultiShop.WebUI.ViewComponents.ProductDetailViewComponents
 {
     public class _ProductDetailFeatureComponentPartial : ViewComponent
     {
