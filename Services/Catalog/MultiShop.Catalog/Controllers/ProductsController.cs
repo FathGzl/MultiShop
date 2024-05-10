@@ -22,7 +22,7 @@ namespace MultiShop.Catalog.Controllers
         {
             var values = await _productService.GetAllProductsAsync();
             return Ok(values);
-        }
+        }      
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(string id)
@@ -50,6 +50,13 @@ namespace MultiShop.Catalog.Controllers
         {
             await _productService.UpdateProductAsync(updateProductDto);
             return Ok("Ürün Başarıyla Güncellendi");
+        }
+
+        [HttpGet("ProductListWithCategory")]
+        public async Task<IActionResult> ProductListWithCategory()
+        {
+            var values = await _productService.GetProductsWithCategoryAsync();
+            return Ok(values);
         }
     }
 }
