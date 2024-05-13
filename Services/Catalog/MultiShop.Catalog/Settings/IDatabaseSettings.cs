@@ -12,6 +12,7 @@
         string OfferDiscountCollectionName { get; set; }
         string BrandCollectionName { get; set; }
         string AboutCollectionName { get; set; }
+        string ContactCollectionName { get; set; }
 
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }      
