@@ -1,0 +1,117 @@
+{
+  "Routes": [
+    {
+      //Catalog Mikroservis Ocelot Gateway Entegrasyonu
+      //Downstream Ocelat nasıl karşılayıp geri göndereceğiz request verilen yanıt
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7100
+        }
+      ],
+      //Upstream Client Tarafından Gelen İsteğin Oldu bölüm
+      "UpstreamPathTemplate": "/services/catalog/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "CatalogFullPermission" ]
+      }
+    },
+    {
+      //Discount Mikroservis Ocelot Gateway Entegrasyonu
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7101
+        }
+      ],
+      "UpstreamPathTemplate": "/services/discount/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "DiscountFullPermission" ]
+      }
+    },
+    {
+      //Order Mikroservis Ocelot Gateway Entegrasyonu
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7102
+        }
+      ],
+      "UpstreamPathTemplate": "/services/order/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "OrderFullPermission" ]
+      }
+    },
+    {
+      //Kargo Mikroservis Ocelot Gateway Entegrasyonu
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7103
+        }
+      ],
+      "UpstreamPathTemplate": "/services/cargo/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "CargoFullPermission" ]
+      }
+    },
+    {
+      //Sepet Mikroservis Ocelot Gateway Entegrasyonu
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7104
+        }
+      ],
+      "UpstreamPathTemplate": "/services/basket/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "BasketFullPermission" ]
+      }
+    },
+    {
+      //Sepet Mikroservis Ocelot Gateway Entegrasyonu
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7105
+        }
+      ],
+      "UpstreamPathTemplate": "/services/comment/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotAuthenticationScheme",
+        "AllowedScopes": [ "CommentFullPermission" ]
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}
