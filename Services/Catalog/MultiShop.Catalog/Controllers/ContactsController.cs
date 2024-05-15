@@ -6,7 +6,6 @@ using MultiShop.Catalog.Services.ContactServices;
 
 namespace MultiShop.Catalog.Controllers
 {
-    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class ContactsController : ControllerBase
