@@ -28,7 +28,7 @@ namespace MultiShop.WebUI.Services.Concretes
 
         }
 
-        public async Task<bool> GetRefreshToken(SignInDto signInDto)
+        public async Task<bool> GetRefreshToken()
         {
             var discoveryEndPoint = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
             {
@@ -38,16 +38,7 @@ namespace MultiShop.WebUI.Services.Concretes
                     RequireHttps = false
                 }
             });
-
-            var passwordTokenRequest = new PasswordTokenRequest
-            {
-                ClientId = _clientSettings.MultiShopManagerId.ClientId,
-                ClientSecret = _clientSettings.MultiShopManagerId.ClientSecret,
-                UserName = signInDto.Username,
-                Password = signInDto.Password,
-                Address = discoveryEndPoint.TokenEndpoint
-            };
-
+            
             var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
 
             RefreshTokenRequest refreshTokenRequest = new()
