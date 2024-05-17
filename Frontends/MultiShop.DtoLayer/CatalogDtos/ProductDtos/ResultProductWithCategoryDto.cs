@@ -2,7 +2,7 @@
 
 namespace MultiShop.DtoLayer.CatalogDtos.ProductDtos
 {
-    public class ResultProductsWithCategoryDto
+    public class ResultProductWithCategoryDto
     {
         public string ProductId { get; set; }
         public string ProductName { get; set; }

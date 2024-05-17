@@ -21,7 +21,7 @@ namespace MultiShop.WebUI.ViewComponents.ProductListViewComponents
             {
 
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultProductsWithCategoryDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultProductWithCategoryDto>>(jsonData);
                 return View(values);
             }
 
