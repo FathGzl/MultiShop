@@ -1,6 +1,6 @@
-﻿using MultiShop.Catalog.Dtos.BrandDtos;
+﻿using MultiShop.DtoLayer.CatalogDtos.BrandDtos;
 
-namespace MultiShop.Catalog.Services.BrandServices
+namespace MultiShop.WebUI.Services.CatalogServices.BrandServices
 {
     public interface IBrandService
     {
