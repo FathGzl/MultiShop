@@ -71,7 +71,7 @@ namespace MultiShop.IdentityServer
                 ClientName="Multi Shop Manager User",
                 AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={ new Secret("multishopsecret".Sha256())},
-                AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission", "CommentFullPermission", "OcelotFullPermission", "PaymentFullPermission", "ImageFullPermission",
+                AllowedScopes={ "DiscountFullPermission","CatalogReadPermission", "CatalogFullPermission", "CommentFullPermission", "OcelotFullPermission", "PaymentFullPermission", "ImageFullPermission",
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.Email,
                 IdentityServerConstants.StandardScopes.OpenId,
