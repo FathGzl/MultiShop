@@ -66,21 +66,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.DtoLayer", "Front
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{459EB033-5753-4FED-95FC-8305EEC6F392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Comment", "Comment\MultiShop.Comment\MultiShop.Comment.csproj", "{30B10596-7C3D-4EDC-945A-E768BBA1D336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Comment", "Comment\MultiShop.Comment\MultiShop.Comment.csproj", "{30B10596-7C3D-4EDC-945A-E768BBA1D336}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{3FF1A795-F34D-423C-AF3B-A6FBCFF1600B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{C964FCD0-E39A-4157-BA21-ECEC549008E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.OcelotApiGateway", "ApiGateway\MultiShop.OcelotApiGateway\MultiShop.OcelotApiGateway.csproj", "{230BC092-BAB7-42B1-97E3-37A3396F1221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.OcelotApiGateway", "ApiGateway\MultiShop.OcelotApiGateway\MultiShop.OcelotApiGateway.csproj", "{230BC092-BAB7-42B1-97E3-37A3396F1221}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{EF39F2F1-3E82-4E9A-B38D-C872E85666D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Payment", "Services\Payment\MultiShop.Payment\MultiShop.Payment.csproj", "{2D75E369-EE6F-4B74-82F9-73EAE05CFC28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Payment", "Services\Payment\MultiShop.Payment\MultiShop.Payment.csproj", "{2D75E369-EE6F-4B74-82F9-73EAE05CFC28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{E1E460D9-3AC1-451A-9845-F914C6C7825C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Images", "Services\Images\MultiShop.Images\MultiShop.Images.csproj", "{7FDD6A98-B341-47C8-BEF9-08A8D1CDC1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Images", "Services\Images\MultiShop.Images\MultiShop.Images.csproj", "{7FDD6A98-B341-47C8-BEF9-08A8D1CDC1A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
