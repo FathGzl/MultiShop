@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Areas\User\Views\Shared\Components\_UserLayoutHeadComponentPartial\Default.cshtml" />
+    <None Include="Areas\User\Views\Shared\Components\_UserLayoutNavbarComponentPartial\Default.cshtml" />
+    <None Include="Areas\User\Views\Shared\Components\_UserLayoutSideBarComponentPartial\Default.cshtml" />
     <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\help-documentation\assets\.DS_Store" />
     <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\help-documentation\assets\blueprint-css\plugins\.DS_Store" />
     <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\app\et-line-font\fonts\.DS_Store" />
@@ -29,6 +32,8 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\User\Data\" />
+    <Folder Include="Areas\User\Models\" />
   </ItemGroup>
 
   <ItemGroup>
